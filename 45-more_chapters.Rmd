@@ -1,0 +1,41 @@
+# Tables are fun {#intro}
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(gt)
+```
+
+
+Tables can be a challenge to render
+
+## Paged tables are interactive but only work in .nb.html or unless specailly contructed
+
+```{r}
+starwars
+```
+
+## non-interactive
+
+Old school, BUT easily cross functional with PDF and HTML alike
+
+```{r nice-tab, tidy=FALSE}
+knitr::kable(
+  head(iris, 20), caption = 'Here is a nice table!',
+  booktabs = TRUE
+)
+```
+
+## Great Tables
+
+the [`gt` package](https://gt.rstudio.com/) is awesome but doesn't work in PDF
+
+```{r}
+starwars %>% 
+  select(1:8) %>% 
+  slice_head(n = 8) %>% 
+  gt()
+```
+
+
+
+None of this was based on a book by John Little [@Little2018].
