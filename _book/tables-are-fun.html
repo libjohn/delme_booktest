@@ -145,11 +145,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
 <li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="tables.html"><a href="tables.html"><i class="fa fa-check"></i><b>6</b> Tables are fun</a>
+<li class="chapter" data-level="6" data-path="tables-are-fun.html"><a href="tables-are-fun.html"><i class="fa fa-check"></i><b>6</b> Tables are fun</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="tables.html"><a href="tables.html#paged-tables-are-interactive-but-only-work-in-.nb.html"><i class="fa fa-check"></i><b>6.1</b> Paged tables are interactive but only work in .nb.html</a></li>
-<li class="chapter" data-level="6.2" data-path="tables.html"><a href="tables.html#non-interactive"><i class="fa fa-check"></i><b>6.2</b> non-interactive</a></li>
-<li class="chapter" data-level="6.3" data-path="tables.html"><a href="tables.html#great-tables"><i class="fa fa-check"></i><b>6.3</b> Great Tables</a></li>
+<li class="chapter" data-level="6.1" data-path="tables-are-fun.html"><a href="tables-are-fun.html#paged-tables-are-interactive-but-only-work-in-.nb.html"><i class="fa fa-check"></i><b>6.1</b> Paged tables are interactive but only work in .nb.html</a></li>
+<li class="chapter" data-level="6.2" data-path="tables-are-fun.html"><a href="tables-are-fun.html#non-interactive"><i class="fa fa-check"></i><b>6.2</b> non-interactive</a></li>
+<li class="chapter" data-level="6.3" data-path="tables-are-fun.html"><a href="tables-are-fun.html#great-tables"><i class="fa fa-check"></i><b>6.3</b> Great Tables</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>7</b> Final Words</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -173,15 +173,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="tables" class="section level1" number="6">
+<div id="tables-are-fun" class="section level1" number="6">
 <h1><span class="header-section-number">Chapter 6</span> Tables are fun</h1>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="tables.html#cb4-1"></a><span class="kw">library</span>(tidyverse)</span>
-<span id="cb4-2"><a href="tables.html#cb4-2"></a><span class="kw">library</span>(gt)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="tables-are-fun.html#cb4-1"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb4-2"><a href="tables-are-fun.html#cb4-2"></a><span class="kw">library</span>(gt)</span></code></pre></div>
 <p>Tables can be a challenge to render</p>
 <p><a href="https://bookdown.org/yihui/bookdown/tables.html" class="uri">https://bookdown.org/yihui/bookdown/tables.html</a></p>
 <div id="paged-tables-are-interactive-but-only-work-in-.nb.html" class="section level2" number="6.1">
 <h2><span class="header-section-number">6.1</span> Paged tables are interactive but only work in .nb.html</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="tables.html#cb5-1"></a>starwars</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="tables-are-fun.html#cb5-1"></a>starwars</span></code></pre></div>
 <pre><code>## # A tibble: 87 x 14
 ##    name  height  mass hair_color skin_color eye_color birth_year sex   gender
 ##    &lt;chr&gt;  &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; 
@@ -201,10 +201,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="non-interactive" class="section level2" number="6.2">
 <h2><span class="header-section-number">6.2</span> non-interactive</h2>
 <p>Old school, BUT easily cross functional with PDF and HTML alike</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="tables.html#cb7-1"></a>knitr<span class="op">::</span><span class="kw">kable</span>(</span>
-<span id="cb7-2"><a href="tables.html#cb7-2"></a>  <span class="kw">head</span>(starwars <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">6</span>), <span class="dv">20</span>), <span class="dt">caption =</span> <span class="st">&#39;Another nice table!&#39;</span>,</span>
-<span id="cb7-3"><a href="tables.html#cb7-3"></a>  <span class="dt">booktabs =</span> <span class="ot">TRUE</span></span>
-<span id="cb7-4"><a href="tables.html#cb7-4"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="tables-are-fun.html#cb7-1"></a>knitr<span class="op">::</span><span class="kw">kable</span>(</span>
+<span id="cb7-2"><a href="tables-are-fun.html#cb7-2"></a>  <span class="kw">head</span>(starwars <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">6</span>), <span class="dv">20</span>), <span class="dt">caption =</span> <span class="st">&#39;Another nice table!&#39;</span>,</span>
+<span id="cb7-3"><a href="tables-are-fun.html#cb7-3"></a>  <span class="dt">booktabs =</span> <span class="ot">TRUE</span></span>
+<span id="cb7-4"><a href="tables-are-fun.html#cb7-4"></a>)</span></code></pre></div>
 <table>
 <caption><span id="tab:unnamed-chunk-5">Table 6.1: </span>Another nice table!</caption>
 <thead>
@@ -384,23 +384,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="great-tables" class="section level2" number="6.3">
 <h2><span class="header-section-number">6.3</span> Great Tables</h2>
 <p>the <a href="https://gt.rstudio.com/"><code>gt</code> package</a> is awesome but doesn’t work in PDF</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="tables.html#cb8-1"></a>starwars <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb8-2"><a href="tables.html#cb8-2"></a><span class="st">  </span><span class="kw">select</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">4</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb8-3"><a href="tables.html#cb8-3"></a><span class="st">  </span><span class="kw">slice_head</span>(<span class="dt">n =</span> <span class="dv">8</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb8-4"><a href="tables.html#cb8-4"></a><span class="st">  </span><span class="kw">gt</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb8-5"><a href="tables.html#cb8-5"></a><span class="st">  </span><span class="kw">tab_header</span>(</span>
-<span id="cb8-6"><a href="tables.html#cb8-6"></a>    <span class="dt">title =</span> <span class="kw">md</span>(<span class="st">&quot;**_Star Wars_ characters**&quot;</span>),</span>
-<span id="cb8-7"><a href="tables.html#cb8-7"></a>    <span class="dt">subtitle =</span> <span class="st">&quot;subtitles are cool&quot;</span></span>
-<span id="cb8-8"><a href="tables.html#cb8-8"></a>    ) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb8-9"><a href="tables.html#cb8-9"></a><span class="st">  </span><span class="kw">tab_source_note</span>(</span>
-<span id="cb8-10"><a href="tables.html#cb8-10"></a>    <span class="dt">source_note =</span> <span class="kw">md</span>(<span class="st">&quot;Source:  `dplyr::starwars`&quot;</span>)</span>
-<span id="cb8-11"><a href="tables.html#cb8-11"></a>    ) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb8-12"><a href="tables.html#cb8-12"></a><span class="st">  </span><span class="kw">tab_options</span>(<span class="dt">heading.background.color =</span> <span class="st">&quot;darkseagreen&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="tables-are-fun.html#cb8-1"></a>starwars <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-2"><a href="tables-are-fun.html#cb8-2"></a><span class="st">  </span><span class="kw">select</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">4</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-3"><a href="tables-are-fun.html#cb8-3"></a><span class="st">  </span><span class="kw">slice_head</span>(<span class="dt">n =</span> <span class="dv">8</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-4"><a href="tables-are-fun.html#cb8-4"></a><span class="st">  </span><span class="kw">gt</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-5"><a href="tables-are-fun.html#cb8-5"></a><span class="st">  </span><span class="kw">tab_header</span>(</span>
+<span id="cb8-6"><a href="tables-are-fun.html#cb8-6"></a>    <span class="dt">title =</span> <span class="kw">md</span>(<span class="st">&quot;**_Star Wars_ characters**&quot;</span>),</span>
+<span id="cb8-7"><a href="tables-are-fun.html#cb8-7"></a>    <span class="dt">subtitle =</span> <span class="st">&quot;subtitles are cool&quot;</span></span>
+<span id="cb8-8"><a href="tables-are-fun.html#cb8-8"></a>    ) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-9"><a href="tables-are-fun.html#cb8-9"></a><span class="st">  </span><span class="kw">tab_source_note</span>(</span>
+<span id="cb8-10"><a href="tables-are-fun.html#cb8-10"></a>    <span class="dt">source_note =</span> <span class="kw">md</span>(<span class="st">&quot;Source:  `dplyr::starwars`&quot;</span>)</span>
+<span id="cb8-11"><a href="tables-are-fun.html#cb8-11"></a>    ) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-12"><a href="tables-are-fun.html#cb8-12"></a><span class="st">  </span><span class="kw">tab_options</span>(<span class="dt">heading.background.color =</span> <span class="st">&quot;darkseagreen&quot;</span>)</span></code></pre></div>
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#rwtdwmdqyi .gt_table {
+#bfkxmljlwl .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -425,7 +425,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-left-color: #D3D3D3;
 }
 
-#rwtdwmdqyi .gt_heading {
+#bfkxmljlwl .gt_heading {
   background-color: darkseagreen;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -437,7 +437,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-#rwtdwmdqyi .gt_title {
+#bfkxmljlwl .gt_title {
   color: #FFFFFF;
   font-size: 125%;
   font-weight: initial;
@@ -447,7 +447,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-bottom-width: 0;
 }
 
-#rwtdwmdqyi .gt_subtitle {
+#bfkxmljlwl .gt_subtitle {
   color: #FFFFFF;
   font-size: 85%;
   font-weight: initial;
@@ -457,13 +457,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-top-width: 0;
 }
 
-#rwtdwmdqyi .gt_bottom_border {
+#bfkxmljlwl .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rwtdwmdqyi .gt_col_headings {
+#bfkxmljlwl .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -478,7 +478,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-#rwtdwmdqyi .gt_col_heading {
+#bfkxmljlwl .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -498,7 +498,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   overflow-x: hidden;
 }
 
-#rwtdwmdqyi .gt_column_spanner_outer {
+#bfkxmljlwl .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -510,15 +510,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 4px;
 }
 
-#rwtdwmdqyi .gt_column_spanner_outer:first-child {
+#bfkxmljlwl .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rwtdwmdqyi .gt_column_spanner_outer:last-child {
+#bfkxmljlwl .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rwtdwmdqyi .gt_column_spanner {
+#bfkxmljlwl .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -530,7 +530,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   width: 100%;
 }
 
-#rwtdwmdqyi .gt_group_heading {
+#bfkxmljlwl .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -552,7 +552,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   vertical-align: middle;
 }
 
-#rwtdwmdqyi .gt_empty_group_heading {
+#bfkxmljlwl .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -567,15 +567,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   vertical-align: middle;
 }
 
-#rwtdwmdqyi .gt_from_md > :first-child {
+#bfkxmljlwl .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rwtdwmdqyi .gt_from_md > :last-child {
+#bfkxmljlwl .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rwtdwmdqyi .gt_row {
+#bfkxmljlwl .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -594,7 +594,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   overflow-x: hidden;
 }
 
-#rwtdwmdqyi .gt_stub {
+#bfkxmljlwl .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -606,7 +606,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-left: 12px;
 }
 
-#rwtdwmdqyi .gt_summary_row {
+#bfkxmljlwl .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -616,7 +616,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 5px;
 }
 
-#rwtdwmdqyi .gt_first_summary_row {
+#bfkxmljlwl .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -626,7 +626,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-top-color: #D3D3D3;
 }
 
-#rwtdwmdqyi .gt_grand_summary_row {
+#bfkxmljlwl .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -636,7 +636,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 5px;
 }
 
-#rwtdwmdqyi .gt_first_grand_summary_row {
+#bfkxmljlwl .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -646,11 +646,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-top-color: #D3D3D3;
 }
 
-#rwtdwmdqyi .gt_striped {
+#bfkxmljlwl .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rwtdwmdqyi .gt_table_body {
+#bfkxmljlwl .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -659,7 +659,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-bottom-color: #D3D3D3;
 }
 
-#rwtdwmdqyi .gt_footnotes {
+#bfkxmljlwl .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -673,13 +673,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-#rwtdwmdqyi .gt_footnote {
+#bfkxmljlwl .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#rwtdwmdqyi .gt_sourcenotes {
+#bfkxmljlwl .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -693,46 +693,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-#rwtdwmdqyi .gt_sourcenote {
+#bfkxmljlwl .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#rwtdwmdqyi .gt_left {
+#bfkxmljlwl .gt_left {
   text-align: left;
 }
 
-#rwtdwmdqyi .gt_center {
+#bfkxmljlwl .gt_center {
   text-align: center;
 }
 
-#rwtdwmdqyi .gt_right {
+#bfkxmljlwl .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rwtdwmdqyi .gt_font_normal {
+#bfkxmljlwl .gt_font_normal {
   font-weight: normal;
 }
 
-#rwtdwmdqyi .gt_font_bold {
+#bfkxmljlwl .gt_font_bold {
   font-weight: bold;
 }
 
-#rwtdwmdqyi .gt_font_italic {
+#bfkxmljlwl .gt_font_italic {
   font-style: italic;
 }
 
-#rwtdwmdqyi .gt_super {
+#bfkxmljlwl .gt_super {
   font-size: 65%;
 }
 
-#rwtdwmdqyi .gt_footnote_marks {
+#bfkxmljlwl .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="rwtdwmdqyi" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="bfkxmljlwl" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="4" class="gt_heading gt_title gt_font_normal" style><strong><em>Star Wars</em> characters</strong></th>

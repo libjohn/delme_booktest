@@ -1,4 +1,4 @@
-# Tables are fun {#tables}
+# Tables are fun
 
 ```{r message=FALSE, warning=FALSE}
 library(tidyverse)

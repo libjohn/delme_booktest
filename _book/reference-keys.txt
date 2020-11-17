@@ -8,7 +8,7 @@ methods
 applications
 example-one
 example-two
-tables
+glob
 paged-tables-are-interactive-but-only-work-in-.nb.html
 non-interactive
 great-tables
