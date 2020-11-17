@@ -1,0 +1,5 @@
+book_filename: "delme_booktest"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Chapter "
