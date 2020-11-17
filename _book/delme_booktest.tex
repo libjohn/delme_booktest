@@ -108,6 +108,10 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
 \usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{longtable}
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
@@ -239,6 +243,143 @@ Some \emph{significant} applications are demonstrated in this chapter.
 
 \hypertarget{example-two}{%
 \section{Example two}\label{example-two}}
+
+\hypertarget{tables}{%
+\chapter{Tables are fun}\label{tables}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(gt)}
+\end{Highlighting}
+\end{Shaded}
+
+Tables can be a challenge to render
+
+\url{https://bookdown.org/yihui/bookdown/tables.html}
+
+\hypertarget{paged-tables-are-interactive-but-only-work-in-.nb.html}{%
+\section{Paged tables are interactive but only work in .nb.html}\label{paged-tables-are-interactive-but-only-work-in-.nb.html}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{starwars}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 87 x 14
+##    name  height  mass hair_color skin_color eye_color birth_year sex   gender
+##    <chr>  <int> <dbl> <chr>      <chr>      <chr>          <dbl> <chr> <chr> 
+##  1 Luke~    172    77 blond      fair       blue            19   male  mascu~
+##  2 C-3PO    167    75 <NA>       gold       yellow         112   none  mascu~
+##  3 R2-D2     96    32 <NA>       white, bl~ red             33   none  mascu~
+##  4 Dart~    202   136 none       white      yellow          41.9 male  mascu~
+##  5 Leia~    150    49 brown      light      brown           19   fema~ femin~
+##  6 Owen~    178   120 brown, gr~ light      blue            52   male  mascu~
+##  7 Beru~    165    75 brown      light      blue            47   fema~ femin~
+##  8 R5-D4     97    32 <NA>       white, red red             NA   none  mascu~
+##  9 Bigg~    183    84 black      light      brown           24   male  mascu~
+## 10 Obi-~    182    77 auburn, w~ fair       blue-gray       57   male  mascu~
+## # ... with 77 more rows, and 5 more variables: homeworld <chr>, species <chr>,
+## #   films <list>, vehicles <list>, starships <list>
+\end{verbatim}
+
+\hypertarget{non-interactive}{%
+\section{non-interactive}\label{non-interactive}}
+
+Old school, BUT easily cross functional with PDF and HTML alike
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}
+  \KeywordTok{head}\NormalTok{(starwars }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\KeywordTok{select}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{6}\NormalTok{), }\DecValTok{20}\NormalTok{), }\DataTypeTok{caption =} \StringTok{\textquotesingle{}Another nice table!\textquotesingle{}}\NormalTok{,}
+  \DataTypeTok{booktabs =} \OtherTok{TRUE}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{table}
+
+\caption{\label{tab:unnamed-chunk-5}Another nice table!}
+\centering
+\begin{tabular}[t]{lrrlll}
+\toprule
+name & height & mass & hair\_color & skin\_color & eye\_color\\
+\midrule
+Luke Skywalker & 172 & 77 & blond & fair & blue\\
+C-3PO & 167 & 75 & NA & gold & yellow\\
+R2-D2 & 96 & 32 & NA & white, blue & red\\
+Darth Vader & 202 & 136 & none & white & yellow\\
+Leia Organa & 150 & 49 & brown & light & brown\\
+\addlinespace
+Owen Lars & 178 & 120 & brown, grey & light & blue\\
+Beru Whitesun lars & 165 & 75 & brown & light & blue\\
+R5-D4 & 97 & 32 & NA & white, red & red\\
+Biggs Darklighter & 183 & 84 & black & light & brown\\
+Obi-Wan Kenobi & 182 & 77 & auburn, white & fair & blue-gray\\
+\addlinespace
+Anakin Skywalker & 188 & 84 & blond & fair & blue\\
+Wilhuff Tarkin & 180 & NA & auburn, grey & fair & blue\\
+Chewbacca & 228 & 112 & brown & unknown & blue\\
+Han Solo & 180 & 80 & brown & fair & brown\\
+Greedo & 173 & 74 & NA & green & black\\
+\addlinespace
+Jabba Desilijic Tiure & 175 & 1358 & NA & green-tan, brown & orange\\
+Wedge Antilles & 170 & 77 & brown & fair & hazel\\
+Jek Tono Porkins & 180 & 110 & brown & fair & blue\\
+Yoda & 66 & 17 & white & green & brown\\
+Palpatine & 170 & 75 & grey & pale & yellow\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{great-tables}{%
+\section{Great Tables}\label{great-tables}}
+
+the \href{https://gt.rstudio.com/}{\texttt{gt} package} is awesome but doesn't work in PDF
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{starwars }\OperatorTok{\%\textgreater{}\%}\StringTok{ }
+\StringTok{  }\KeywordTok{select}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{4}\NormalTok{) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }
+\StringTok{  }\KeywordTok{slice\_head}\NormalTok{(}\DataTypeTok{n =} \DecValTok{8}\NormalTok{) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }
+\StringTok{  }\KeywordTok{gt}\NormalTok{() }\OperatorTok{\%\textgreater{}\%}\StringTok{ }
+\StringTok{  }\KeywordTok{tab\_header}\NormalTok{(}
+    \DataTypeTok{title =} \KeywordTok{md}\NormalTok{(}\StringTok{"**\_Star Wars\_ characters**"}\NormalTok{),}
+    \DataTypeTok{subtitle =} \StringTok{"subtitles are cool"}
+\NormalTok{    ) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }
+\StringTok{  }\KeywordTok{tab\_source\_note}\NormalTok{(}
+    \DataTypeTok{source\_note =} \KeywordTok{md}\NormalTok{(}\StringTok{"Source:  \textasciigrave{}dplyr::starwars\textasciigrave{}"}\NormalTok{)}
+\NormalTok{    ) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }
+\StringTok{  }\KeywordTok{tab\_options}\NormalTok{(}\DataTypeTok{heading.background.color =} \StringTok{"darkseagreen"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\captionsetup[table]{labelformat=empty,skip=1pt}
+\begin{longtable}{lcrl}
+\caption*{
+\large \textbf{\emph{Star Wars} characters}\\ 
+\small subtitles are cool\\ 
+} \\ 
+\toprule
+name & height & mass & hair\_color \\ 
+\midrule
+Luke Skywalker & 172 & 77 & blond \\ 
+C-3PO & 167 & 75 & NA \\ 
+R2-D2 & 96 & 32 & NA \\ 
+Darth Vader & 202 & 136 & none \\ 
+Leia Organa & 150 & 49 & brown \\ 
+Owen Lars & 178 & 120 & brown, grey \\ 
+Beru Whitesun lars & 165 & 75 & brown \\ 
+R5-D4 & 97 & 32 & NA \\ 
+\bottomrule
+\end{longtable}
+\begin{minipage}{\linewidth}
+Source:  \texttt{dplyr::starwars}\\ 
+\end{minipage}
+
+None of this was based on a book by John Little \citep{Little2018}.
 
 \hypertarget{final-words}{%
 \chapter{Final Words}\label{final-words}}

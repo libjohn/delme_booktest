@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 6 Tables are fun | Nifty Neato Models</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 6 Tables are fun | Nifty Neato Models" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 Tables are fun | Nifty Neato Models" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="John Little" />
+
+
+<meta name="date" content="2020-11-17" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="applications.html"/>
+<link rel="next" href="final-words.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
+<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
+<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
+<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="tables.html"><a href="tables.html"><i class="fa fa-check"></i><b>6</b> Tables are fun</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="tables.html"><a href="tables.html#paged-tables-are-interactive-but-only-work-in-.nb.html"><i class="fa fa-check"></i><b>6.1</b> Paged tables are interactive but only work in .nb.html</a></li>
+<li class="chapter" data-level="6.2" data-path="tables.html"><a href="tables.html#non-interactive"><i class="fa fa-check"></i><b>6.2</b> non-interactive</a></li>
+<li class="chapter" data-level="6.3" data-path="tables.html"><a href="tables.html#great-tables"><i class="fa fa-check"></i><b>6.3</b> Great Tables</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>7</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Nifty Neato Models</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="tables" class="section level1" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Tables are fun</h1>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="tables.html#cb4-1"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb4-2"><a href="tables.html#cb4-2"></a><span class="kw">library</span>(gt)</span></code></pre></div>
+<p>Tables can be a challenge to render</p>
+<p><a href="https://bookdown.org/yihui/bookdown/tables.html" class="uri">https://bookdown.org/yihui/bookdown/tables.html</a></p>
+<div id="paged-tables-are-interactive-but-only-work-in-.nb.html" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Paged tables are interactive but only work in .nb.html</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="tables.html#cb5-1"></a>starwars</span></code></pre></div>
+<pre><code>## # A tibble: 87 x 14
+##    name  height  mass hair_color skin_color eye_color birth_year sex   gender
+##    &lt;chr&gt;  &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; 
+##  1 Luke~    172    77 blond      fair       blue            19   male  mascu~
+##  2 C-3PO    167    75 &lt;NA&gt;       gold       yellow         112   none  mascu~
+##  3 R2-D2     96    32 &lt;NA&gt;       white, bl~ red             33   none  mascu~
+##  4 Dart~    202   136 none       white      yellow          41.9 male  mascu~
+##  5 Leia~    150    49 brown      light      brown           19   fema~ femin~
+##  6 Owen~    178   120 brown, gr~ light      blue            52   male  mascu~
+##  7 Beru~    165    75 brown      light      blue            47   fema~ femin~
+##  8 R5-D4     97    32 &lt;NA&gt;       white, red red             NA   none  mascu~
+##  9 Bigg~    183    84 black      light      brown           24   male  mascu~
+## 10 Obi-~    182    77 auburn, w~ fair       blue-gray       57   male  mascu~
+## # ... with 77 more rows, and 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;,
+## #   films &lt;list&gt;, vehicles &lt;list&gt;, starships &lt;list&gt;</code></pre>
+</div>
+<div id="non-interactive" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> non-interactive</h2>
+<p>Old school, BUT easily cross functional with PDF and HTML alike</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="tables.html#cb7-1"></a>knitr<span class="op">::</span><span class="kw">kable</span>(</span>
+<span id="cb7-2"><a href="tables.html#cb7-2"></a>  <span class="kw">head</span>(starwars <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">6</span>), <span class="dv">20</span>), <span class="dt">caption =</span> <span class="st">&#39;Another nice table!&#39;</span>,</span>
+<span id="cb7-3"><a href="tables.html#cb7-3"></a>  <span class="dt">booktabs =</span> <span class="ot">TRUE</span></span>
+<span id="cb7-4"><a href="tables.html#cb7-4"></a>)</span></code></pre></div>
+<table>
+<caption><span id="tab:unnamed-chunk-5">Table 6.1: </span>Another nice table!</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">height</th>
+<th align="right">mass</th>
+<th align="left">hair_color</th>
+<th align="left">skin_color</th>
+<th align="left">eye_color</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Luke Skywalker</td>
+<td align="right">172</td>
+<td align="right">77</td>
+<td align="left">blond</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+</tr>
+<tr class="even">
+<td align="left">C-3PO</td>
+<td align="right">167</td>
+<td align="right">75</td>
+<td align="left">NA</td>
+<td align="left">gold</td>
+<td align="left">yellow</td>
+</tr>
+<tr class="odd">
+<td align="left">R2-D2</td>
+<td align="right">96</td>
+<td align="right">32</td>
+<td align="left">NA</td>
+<td align="left">white, blue</td>
+<td align="left">red</td>
+</tr>
+<tr class="even">
+<td align="left">Darth Vader</td>
+<td align="right">202</td>
+<td align="right">136</td>
+<td align="left">none</td>
+<td align="left">white</td>
+<td align="left">yellow</td>
+</tr>
+<tr class="odd">
+<td align="left">Leia Organa</td>
+<td align="right">150</td>
+<td align="right">49</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">brown</td>
+</tr>
+<tr class="even">
+<td align="left">Owen Lars</td>
+<td align="right">178</td>
+<td align="right">120</td>
+<td align="left">brown, grey</td>
+<td align="left">light</td>
+<td align="left">blue</td>
+</tr>
+<tr class="odd">
+<td align="left">Beru Whitesun lars</td>
+<td align="right">165</td>
+<td align="right">75</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">blue</td>
+</tr>
+<tr class="even">
+<td align="left">R5-D4</td>
+<td align="right">97</td>
+<td align="right">32</td>
+<td align="left">NA</td>
+<td align="left">white, red</td>
+<td align="left">red</td>
+</tr>
+<tr class="odd">
+<td align="left">Biggs Darklighter</td>
+<td align="right">183</td>
+<td align="right">84</td>
+<td align="left">black</td>
+<td align="left">light</td>
+<td align="left">brown</td>
+</tr>
+<tr class="even">
+<td align="left">Obi-Wan Kenobi</td>
+<td align="right">182</td>
+<td align="right">77</td>
+<td align="left">auburn, white</td>
+<td align="left">fair</td>
+<td align="left">blue-gray</td>
+</tr>
+<tr class="odd">
+<td align="left">Anakin Skywalker</td>
+<td align="right">188</td>
+<td align="right">84</td>
+<td align="left">blond</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+</tr>
+<tr class="even">
+<td align="left">Wilhuff Tarkin</td>
+<td align="right">180</td>
+<td align="right">NA</td>
+<td align="left">auburn, grey</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+</tr>
+<tr class="odd">
+<td align="left">Chewbacca</td>
+<td align="right">228</td>
+<td align="right">112</td>
+<td align="left">brown</td>
+<td align="left">unknown</td>
+<td align="left">blue</td>
+</tr>
+<tr class="even">
+<td align="left">Han Solo</td>
+<td align="right">180</td>
+<td align="right">80</td>
+<td align="left">brown</td>
+<td align="left">fair</td>
+<td align="left">brown</td>
+</tr>
+<tr class="odd">
+<td align="left">Greedo</td>
+<td align="right">173</td>
+<td align="right">74</td>
+<td align="left">NA</td>
+<td align="left">green</td>
+<td align="left">black</td>
+</tr>
+<tr class="even">
+<td align="left">Jabba Desilijic Tiure</td>
+<td align="right">175</td>
+<td align="right">1358</td>
+<td align="left">NA</td>
+<td align="left">green-tan, brown</td>
+<td align="left">orange</td>
+</tr>
+<tr class="odd">
+<td align="left">Wedge Antilles</td>
+<td align="right">170</td>
+<td align="right">77</td>
+<td align="left">brown</td>
+<td align="left">fair</td>
+<td align="left">hazel</td>
+</tr>
+<tr class="even">
+<td align="left">Jek Tono Porkins</td>
+<td align="right">180</td>
+<td align="right">110</td>
+<td align="left">brown</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+</tr>
+<tr class="odd">
+<td align="left">Yoda</td>
+<td align="right">66</td>
+<td align="right">17</td>
+<td align="left">white</td>
+<td align="left">green</td>
+<td align="left">brown</td>
+</tr>
+<tr class="even">
+<td align="left">Palpatine</td>
+<td align="right">170</td>
+<td align="right">75</td>
+<td align="left">grey</td>
+<td align="left">pale</td>
+<td align="left">yellow</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="great-tables" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> Great Tables</h2>
+<p>the <a href="https://gt.rstudio.com/"><code>gt</code> package</a> is awesome but doesn’t work in PDF</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="tables.html#cb8-1"></a>starwars <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-2"><a href="tables.html#cb8-2"></a><span class="st">  </span><span class="kw">select</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">4</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-3"><a href="tables.html#cb8-3"></a><span class="st">  </span><span class="kw">slice_head</span>(<span class="dt">n =</span> <span class="dv">8</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-4"><a href="tables.html#cb8-4"></a><span class="st">  </span><span class="kw">gt</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-5"><a href="tables.html#cb8-5"></a><span class="st">  </span><span class="kw">tab_header</span>(</span>
+<span id="cb8-6"><a href="tables.html#cb8-6"></a>    <span class="dt">title =</span> <span class="kw">md</span>(<span class="st">&quot;**_Star Wars_ characters**&quot;</span>),</span>
+<span id="cb8-7"><a href="tables.html#cb8-7"></a>    <span class="dt">subtitle =</span> <span class="st">&quot;subtitles are cool&quot;</span></span>
+<span id="cb8-8"><a href="tables.html#cb8-8"></a>    ) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-9"><a href="tables.html#cb8-9"></a><span class="st">  </span><span class="kw">tab_source_note</span>(</span>
+<span id="cb8-10"><a href="tables.html#cb8-10"></a>    <span class="dt">source_note =</span> <span class="kw">md</span>(<span class="st">&quot;Source:  `dplyr::starwars`&quot;</span>)</span>
+<span id="cb8-11"><a href="tables.html#cb8-11"></a>    ) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-12"><a href="tables.html#cb8-12"></a><span class="st">  </span><span class="kw">tab_options</span>(<span class="dt">heading.background.color =</span> <span class="st">&quot;darkseagreen&quot;</span>)</span></code></pre></div>
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#wxgenyjimz .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#wxgenyjimz .gt_heading {
+  background-color: darkseagreen;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#wxgenyjimz .gt_title {
+  color: #FFFFFF;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#wxgenyjimz .gt_subtitle {
+  color: #FFFFFF;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 4px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#wxgenyjimz .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wxgenyjimz .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#wxgenyjimz .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#wxgenyjimz .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#wxgenyjimz .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#wxgenyjimz .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#wxgenyjimz .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#wxgenyjimz .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#wxgenyjimz .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#wxgenyjimz .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#wxgenyjimz .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#wxgenyjimz .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#wxgenyjimz .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#wxgenyjimz .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wxgenyjimz .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#wxgenyjimz .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wxgenyjimz .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#wxgenyjimz .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#wxgenyjimz .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wxgenyjimz .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#wxgenyjimz .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#wxgenyjimz .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#wxgenyjimz .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#wxgenyjimz .gt_left {
+  text-align: left;
+}
+
+#wxgenyjimz .gt_center {
+  text-align: center;
+}
+
+#wxgenyjimz .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#wxgenyjimz .gt_font_normal {
+  font-weight: normal;
+}
+
+#wxgenyjimz .gt_font_bold {
+  font-weight: bold;
+}
+
+#wxgenyjimz .gt_font_italic {
+  font-style: italic;
+}
+
+#wxgenyjimz .gt_super {
+  font-size: 65%;
+}
+
+#wxgenyjimz .gt_footnote_marks {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+<div id="wxgenyjimz" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+  <thead class="gt_header">
+    <tr>
+      <th colspan="4" class="gt_heading gt_title gt_font_normal" style><strong><em>Star Wars</em> characters</strong></th>
+    </tr>
+    <tr>
+      <th colspan="4" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style>subtitles are cool</th>
+    </tr>
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">name</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">height</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">mass</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">hair_color</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr>
+      <td class="gt_row gt_left">Luke Skywalker</td>
+      <td class="gt_row gt_center">172</td>
+      <td class="gt_row gt_right">77</td>
+      <td class="gt_row gt_left">blond</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">C-3PO</td>
+      <td class="gt_row gt_center">167</td>
+      <td class="gt_row gt_right">75</td>
+      <td class="gt_row gt_left">NA</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">R2-D2</td>
+      <td class="gt_row gt_center">96</td>
+      <td class="gt_row gt_right">32</td>
+      <td class="gt_row gt_left">NA</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Darth Vader</td>
+      <td class="gt_row gt_center">202</td>
+      <td class="gt_row gt_right">136</td>
+      <td class="gt_row gt_left">none</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Leia Organa</td>
+      <td class="gt_row gt_center">150</td>
+      <td class="gt_row gt_right">49</td>
+      <td class="gt_row gt_left">brown</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Owen Lars</td>
+      <td class="gt_row gt_center">178</td>
+      <td class="gt_row gt_right">120</td>
+      <td class="gt_row gt_left">brown, grey</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Beru Whitesun lars</td>
+      <td class="gt_row gt_center">165</td>
+      <td class="gt_row gt_right">75</td>
+      <td class="gt_row gt_left">brown</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">R5-D4</td>
+      <td class="gt_row gt_center">97</td>
+      <td class="gt_row gt_right">32</td>
+      <td class="gt_row gt_left">NA</td>
+    </tr>
+  </tbody>
+  <tfoot class="gt_sourcenotes">
+    <tr>
+      <td class="gt_sourcenote" colspan="4">Source:  <code>dplyr::starwars</code></td>
+    </tr>
+  </tfoot>
+  
+</table></div>
+<p>None of this was based on a book by John Little <span class="citation">(Little <a href="#ref-Little2018" role="doc-biblioref">2018</a>)</span>.</p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Little2018">
+<p>Little, John. 2018. <em>Cleaning Data with Openrefine</em>. 2nd ed. 411 Chapel Dr.: accordion press. <a href="http://johnlittle.info/openrefine/">http://johnlittle.info/openrefine/</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="applications.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="final-words.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["delme_booktest.pdf", "delme_booktest.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

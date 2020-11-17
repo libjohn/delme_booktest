@@ -1,4 +1,4 @@
-# Tables are fun {#intro}
+# Tables are fun {#tables}
 
 ```{r message=FALSE, warning=FALSE}
 library(tidyverse)
@@ -8,19 +8,22 @@ library(gt)
 
 Tables can be a challenge to render
 
-## Paged tables are interactive but only work in .nb.html or unless specailly contructed
+https://bookdown.org/yihui/bookdown/tables.html
+
+## Paged tables are interactive but only work in .nb.html
 
 ```{r}
 starwars
 ```
 
+
 ## non-interactive
 
 Old school, BUT easily cross functional with PDF and HTML alike
 
-```{r nice-tab, tidy=FALSE}
+```{r tidy=FALSE}
 knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
+  head(starwars %>% select(1:6), 20), caption = 'Another nice table!',
   booktabs = TRUE
 )
 ```
@@ -31,9 +34,17 @@ the [`gt` package](https://gt.rstudio.com/) is awesome but doesn't work in PDF
 
 ```{r}
 starwars %>% 
-  select(1:8) %>% 
+  select(1:4) %>% 
   slice_head(n = 8) %>% 
-  gt()
+  gt() %>% 
+  tab_header(
+    title = md("**_Star Wars_ characters**"),
+    subtitle = "subtitles are cool"
+    ) %>% 
+  tab_source_note(
+    source_note = md("Source:  `dplyr::starwars`")
+    ) %>% 
+  tab_options(heading.background.color = "darkseagreen")
 ```
 
 

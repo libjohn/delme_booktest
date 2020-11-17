@@ -1,5 +1,6 @@
 fig:nice-fig
 tab:nice-tab
+tab:unnamed-chunk-5
 prerequisites
 intro
 literature
@@ -7,4 +8,8 @@ methods
 applications
 example-one
 example-two
+tables
+paged-tables-are-interactive-but-only-work-in-.nb.html
+non-interactive
+great-tables
 final-words
