@@ -2,7 +2,7 @@
 
 ```{r message=FALSE, warning=FALSE}
 library(tidyverse)
-library(gt)
+# library(gt)
 ```
 
 
@@ -23,16 +23,18 @@ Old school, BUT easily cross functional with PDF and HTML alike
 
 ```{r tidy=FALSE}
 knitr::kable(
-  head(starwars %>% select(1:6), 20), caption = 'Another nice table!',
+  head(starwars %>% select(1:6), 8), caption = 'Another nice table!',
   booktabs = TRUE
 )
 ```
 
 ## Great Tables
 
-the [`gt` package](https://gt.rstudio.com/) is awesome but doesn't work in PDF
+the [`gt` package](https://gt.rstudio.com/) is awesome but doesn't work in PDF.  Additionally, the `knitr::kable()` function has some organizatonal and referencing features that you may prefer to have handled automatically.  
 
-```{r}
+Until `gt` moves beyond the development you may want to avoid this approach.
+
+```{r eval=FALSE}
 starwars %>% 
   select(1:4) %>% 
   slice_head(n = 8) %>% 
@@ -44,7 +46,7 @@ starwars %>%
   tab_source_note(
     source_note = md("Source:  `dplyr::starwars`")
     ) %>% 
-  tab_options(heading.background.color = "darkseagreen")
+  tab_options(heading.background.color = "darkseagreen") 
 ```
 
 

@@ -108,10 +108,6 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
 \usepackage{booktabs}
-\usepackage{amsmath}
-\usepackage{booktabs}
-\usepackage{caption}
-\usepackage{longtable}
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
@@ -244,13 +240,13 @@ Some \emph{significant} applications are demonstrated in this chapter.
 \hypertarget{example-two}{%
 \section{Example two}\label{example-two}}
 
-\hypertarget{glob}{%
-\chapter{Tables are fun}\label{glob}}
+\hypertarget{tables-are-fun}{%
+\chapter{Tables are fun}\label{tables-are-fun}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{library}\NormalTok{(tidyverse)}
-\KeywordTok{library}\NormalTok{(gt)}
+\CommentTok{\# library(gt)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -293,7 +289,7 @@ Old school, BUT easily cross functional with PDF and HTML alike
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}
-  \KeywordTok{head}\NormalTok{(starwars }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\KeywordTok{select}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{6}\NormalTok{), }\DecValTok{20}\NormalTok{), }\DataTypeTok{caption =} \StringTok{\textquotesingle{}Another nice table!\textquotesingle{}}\NormalTok{,}
+  \KeywordTok{head}\NormalTok{(starwars }\OperatorTok{\%\textgreater{}\%}\StringTok{ }\KeywordTok{select}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{6}\NormalTok{), }\DecValTok{8}\NormalTok{), }\DataTypeTok{caption =} \StringTok{\textquotesingle{}Another nice table!\textquotesingle{}}\NormalTok{,}
   \DataTypeTok{booktabs =} \OtherTok{TRUE}
 \NormalTok{)}
 \end{Highlighting}
@@ -316,20 +312,6 @@ Leia Organa & 150 & 49 & brown & light & brown\\
 Owen Lars & 178 & 120 & brown, grey & light & blue\\
 Beru Whitesun lars & 165 & 75 & brown & light & blue\\
 R5-D4 & 97 & 32 & NA & white, red & red\\
-Biggs Darklighter & 183 & 84 & black & light & brown\\
-Obi-Wan Kenobi & 182 & 77 & auburn, white & fair & blue-gray\\
-\addlinespace
-Anakin Skywalker & 188 & 84 & blond & fair & blue\\
-Wilhuff Tarkin & 180 & NA & auburn, grey & fair & blue\\
-Chewbacca & 228 & 112 & brown & unknown & blue\\
-Han Solo & 180 & 80 & brown & fair & brown\\
-Greedo & 173 & 74 & NA & green & black\\
-\addlinespace
-Jabba Desilijic Tiure & 175 & 1358 & NA & green-tan, brown & orange\\
-Wedge Antilles & 170 & 77 & brown & fair & hazel\\
-Jek Tono Porkins & 180 & 110 & brown & fair & blue\\
-Yoda & 66 & 17 & white & green & brown\\
-Palpatine & 170 & 75 & grey & pale & yellow\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -337,7 +319,9 @@ Palpatine & 170 & 75 & grey & pale & yellow\\
 \hypertarget{great-tables}{%
 \section{Great Tables}\label{great-tables}}
 
-the \href{https://gt.rstudio.com/}{\texttt{gt} package} is awesome but doesn't work in PDF
+the \href{https://gt.rstudio.com/}{\texttt{gt} package} is awesome but doesn't work in PDF. Additionally, the \texttt{knitr::kable()} function has some organizatonal and referencing features that you may prefer to have handled automatically.
+
+Until \texttt{gt} moves beyond the development you may want to avoid this approach.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -352,32 +336,9 @@ the \href{https://gt.rstudio.com/}{\texttt{gt} package} is awesome but doesn't w
 \StringTok{  }\KeywordTok{tab\_source\_note}\NormalTok{(}
     \DataTypeTok{source\_note =} \KeywordTok{md}\NormalTok{(}\StringTok{"Source:  \textasciigrave{}dplyr::starwars\textasciigrave{}"}\NormalTok{)}
 \NormalTok{    ) }\OperatorTok{\%\textgreater{}\%}\StringTok{ }
-\StringTok{  }\KeywordTok{tab\_options}\NormalTok{(}\DataTypeTok{heading.background.color =} \StringTok{"darkseagreen"}\NormalTok{)}
+\StringTok{  }\KeywordTok{tab\_options}\NormalTok{(}\DataTypeTok{heading.background.color =} \StringTok{"darkseagreen"}\NormalTok{) }
 \end{Highlighting}
 \end{Shaded}
-
-\captionsetup[table]{labelformat=empty,skip=1pt}
-\begin{longtable}{lcrl}
-\caption*{
-\large \textbf{\emph{Star Wars} characters}\\ 
-\small subtitles are cool\\ 
-} \\ 
-\toprule
-name & height & mass & hair\_color \\ 
-\midrule
-Luke Skywalker & 172 & 77 & blond \\ 
-C-3PO & 167 & 75 & NA \\ 
-R2-D2 & 96 & 32 & NA \\ 
-Darth Vader & 202 & 136 & none \\ 
-Leia Organa & 150 & 49 & brown \\ 
-Owen Lars & 178 & 120 & brown, grey \\ 
-Beru Whitesun lars & 165 & 75 & brown \\ 
-R5-D4 & 97 & 32 & NA \\ 
-\bottomrule
-\end{longtable}
-\begin{minipage}{\linewidth}
-Source:  \texttt{dplyr::starwars}\\ 
-\end{minipage}
 
 None of this was based on a book by John Little \citep{Little2018}.
 
