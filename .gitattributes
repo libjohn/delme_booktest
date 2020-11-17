@@ -2,6 +2,7 @@
 *.R linguist-language=R
 *.html linguist-documentation
 *.tex linguist-documentation
+*.TeX linguist-documentation
 *.pdf linguist-documentation
 *.css linguist-documentation
 *.js linguist-documentation
