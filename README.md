@@ -21,7 +21,7 @@ tinytex::install_tinytex()
 
     - Windows users, will need to install the `tinytex` package for PDF support)
 
-1. Follow [steps 1 & 2 of the _Getting Started_ section](https://bookdown.org/home/about/)
+3. Follow [steps 1 & 2 of the _Getting Started_ section](https://bookdown.org/home/about/)
 1. Add Tier Protocol [organizational directories](https://www.projecttier.org/tier-protocol/specifications/#overview-of-the-documentation) 
 1. Create Bookdown Book (Book Tab > Build Book) 
 1. Add .gitignore ; .gitattributes, and license.txt
