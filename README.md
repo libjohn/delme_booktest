@@ -12,17 +12,15 @@ in [Bookdown](https://www.bookdown.org/)
 
     - Windows: install [Rtools](https://cran.r-project.org/bin/windows/Rtools/)  
     
-1. Update/install tidyverse, bookdown, tinytex packcage, and then install TinyTex distribution
+1. Update/install tidyverse, bookdown, tinytex packcages.  Then install TinyTex distribution
 
 ```
-install.packages("tidyverse", "bookdown", "tinytex")
-tinytex::install_tinytex()
+install.packages(c("tidyverse", "bookdown", "tinytex"))
+tinytex::install_tinytex()   # not sure if Mac needs to do this.
 ```
 
-    - Windows users, will need to install the `tinytex` package for PDF support)
-
-3. Follow [steps 1 & 2 of the _Getting Started_ section](https://bookdown.org/home/about/)
-1. Add Tier Protocol [organizational directories](https://www.projecttier.org/tier-protocol/specifications/#overview-of-the-documentation) 
+3. Follow [step 2 of the _Getting Started_ section](https://bookdown.org/home/about/)
+1. Add Tier Protocol [organizational directories](https://www.projecttier.org/tier-protocol/specifications/#overview-of-the-documentation): `_data_original`, `_data_analysis`, `_script_development` 
 1. Create Bookdown Book (Book Tab > Build Book) 
 1. Add .gitignore ; .gitattributes, and license.txt
 1. Make RStudio project a Git repository.  Then push to GitHub  (Run specific CLI git commands, from GitHub, in RStudio terminal)
@@ -36,6 +34,7 @@ tinytex::install_tinytex()
 1. Files and directory names that begin with underscore _ will not be processed by `bookdown::render_book()`
 1. Cannot have identical code-chunk names
 1. Code chunks that produce visualizations should have a code chunk _name_
+1. Synchronize the file_name for each chapter with H1 in in line 1
 1. Cannot have identical identifiers for chapters and sections.  Can have custom identifiers {#foo-identifier}
 1. [**Merge and Knit** or _Knit and Merge_](https://bookdown.org/yihui/bookdown/new-session.html)
 1. .gitignore the _book directory until the end.  Consider, periodically unfreezing and `git push`
