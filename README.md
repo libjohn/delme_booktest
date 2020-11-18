@@ -16,7 +16,7 @@ in [Bookdown](https://www.bookdown.org/)
 
 ```
 install.packages(c("tidyverse", "bookdown", "tinytex"))
-tinytex::install_tinytex()   # not sure if Mac needs to do this.
+tinytex::install_tinytex()   
 ```
 
 3. Follow [step 2 of the _Getting Started_ section](https://bookdown.org/home/about/)
