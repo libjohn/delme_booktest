@@ -8,7 +8,7 @@ in [Bookdown](https://www.bookdown.org/)
 [Bookdown](https://bookdown.org/home/about/) is an open source R package that makes it easy to write books.  It works really well within the  RStudio project environment and is the preferred method within the Duke Stats department for producing and submitting honors theses. 
 
 ## Procedures  
-1. Update/install: R/RStudio
+1. Update/install: R/RStudio.  Is [Git](https://git-scm.com/) installed?  
 
     - Windows: install [Rtools](https://cran.r-project.org/bin/windows/Rtools/)  
     
