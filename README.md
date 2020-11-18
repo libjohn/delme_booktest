@@ -12,10 +12,10 @@ in [Bookdown](https://www.bookdown.org/)
 
     - Windows: install [Rtools](https://cran.r-project.org/bin/windows/Rtools/)  
     
-1. Update/install tidyverse, bookdown, tinytex packcages.  Then install TinyTex distribution
+1. Update/install tidyverse, bookdown, tinytex, remotes, and devtools packages.  Then install TinyTex distribution
 
 ```
-install.packages(c("tidyverse", "bookdown", "tinytex"))
+install.packages(c("tidyverse", "bookdown", "tinytex", "remotes", "devtools"))
 tinytex::install_tinytex()   
 ```
 
@@ -27,6 +27,7 @@ tinytex::install_tinytex()
 ```
 # https://usethis.r-lib.org/articles/articles/git-credentials.html
 # https://happygitwithr.com/
+remotes::install_github("r-lib/usethis")
 library(usethis)
 use_git()  #use_git_ignore()
 use_readme.md()
