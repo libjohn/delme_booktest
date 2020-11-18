@@ -8,8 +8,19 @@ in [Bookdown](https://www.bookdown.org/)
 [Bookdown](https://bookdown.org/home/about/) is an open source R package that makes it easy to write books.  It works really well within the  RStudio project environment and is the preferred method within the Duke Stats department for producing and submitting honors theses. 
 
 ## Procedures  
-1. Update/install: R/RStudio.  
-1. Update/install: `tidyverse` and `bookdown` packages.  (Most Windows users, will need to install the `tinytex` package for PDF support.)
+1. Update/install: R/RStudio
+
+    - Windows: install [Rtools](https://cran.r-project.org/bin/windows/Rtools/)  
+    
+1. Update/install tidyverse, bookdown, tinytex packcage, and then install TinyTex distribution
+
+```
+install.packages("tidyverse", "bookdown", "tinytex")
+tinytex::install_tinytex()
+```
+
+    - Windows users, will need to install the `tinytex` package for PDF support)
+
 1. Follow [steps 1 & 2 of the _Getting Started_ section](https://bookdown.org/home/about/)
 1. Add Tier Protocol [organizational directories](https://www.projecttier.org/tier-protocol/specifications/#overview-of-the-documentation) 
 1. Create Bookdown Book (Book Tab > Build Book) 
