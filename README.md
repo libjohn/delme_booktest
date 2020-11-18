@@ -46,6 +46,7 @@ use_github()
 1. Cannot have identical identifiers for chapters and sections.  Can have custom identifiers {#foo-identifier}
 1. [**Merge and Knit** or _Knit and Merge_](https://bookdown.org/yihui/bookdown/new-session.html)
 1. .gitignore the _book directory until the end.  Consider, periodically unfreezing and `git push`
+1. At the end of your project, you may need to change the `git remote` so you can `git push` your RStudio project into the [Statistics Department GitHub pages](https://github.com/dukestatsci)
 
 ## license: “CC BY-NC”  
 [*Choose license(s)*](https://docs.google.com/presentation/d/1CcKWMUsH7ADCpLQZ57tfhiUIZYgKahmd_z45pVucVlw/edit#slide=id.g72011cc5c1_1_90)
@@ -59,6 +60,8 @@ Creative Commong: Attribution, Non-Commerical
 - [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
 - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 - [Tier Protocol - suggested organizational structure](https://www.projecttier.org/tier-protocol/specifications/#overview-of-the-documentation)
+- [UseThis](https://usethis.r-lib.org/)
+- [Happy Git and GitHub for the useR](https://happygitwithr.com/)
 
 
 
