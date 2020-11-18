@@ -20,10 +20,10 @@ tinytex::install_tinytex()   # not sure if Mac needs to do this.
 ```
 
 3. Follow [step 2 of the _Getting Started_ section](https://bookdown.org/home/about/)
-1. Add Tier Protocol [organizational directories](https://www.projecttier.org/tier-protocol/specifications/#overview-of-the-documentation): `_data_original`, `_data_analysis`, `_script_development` 
+1. Add Tier Protocol [organizational directories](https://www.projecttier.org/tier-protocol/specifications/#overview-of-the-documentation): `_data_original`, `_data_analysis`, `_scripts_development` 
 1. Create Bookdown Book (Book Tab > Build Book) 
 1. Add .gitignore ; .gitattributes, and license.txt
-1. Make RStudio project a Git repository.  Then push to GitHub  (Run specific CLI git commands, from GitHub, in RStudio terminal)
+1. Make RStudio project a Git repository.  Then push to GitHub  (Using specific CLI git commands from GitHub, push existing directory from within RStudio terminal)
 1. Develop your analysis; compose and orchestrate your HTML book (ignore PDF for now)
 1. Continue development with `git commit` and `git push` into your GitHub repository
 1. At the end of your project, you may need to change the `git remote` so you can `git push` your RStudio project into the [Statistics Department GitHub pages](https://github.com/dukestatsci)
