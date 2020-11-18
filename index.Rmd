@@ -1,6 +1,6 @@
 --- 
-title: "Nifty Neato Models"
-subtitle: "Computational Thinking on the wild frontier"
+title: "Nifty Neato Bookdown"
+subtitle: "Based on the book and work of Yihui Xie"
 author: "John Little"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
