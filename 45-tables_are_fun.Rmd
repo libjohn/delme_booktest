@@ -52,3 +52,16 @@ starwars %>%
 
 
 None of this was based on a book by John Little [@Little2018].
+
+
+## Math Expressions
+
+You can make Inline LaTeX equations
+
+$$f(k) = {n \choose k} p^{k} (1-p)^{n-k}$$
+
+The above is done with   `$$f(k) = {n \choose k} p^{k} (1-p)^{n-k}$$`
+
+[Recommendation to R Markdown syntax unless](https://bookdown.org/yihui/rmarkdown/rticles-latex.html) there are specific requirements for using LaTeX.  
+
+Read more about [Markdown syntax for Math expressions](https://bookdown.org/yihui/bookdown/markdown-syntax.html#math-expressions)

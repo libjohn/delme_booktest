@@ -56,7 +56,6 @@ Creative Commong: Attribution, Non-Commerical
 <https://creativecommons.org/licenses/by-nc/4.0/>
 
 ## References  
-- [Getting started with Bookdown](https://bookdown.org/home/about/)
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
 - [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
 - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)

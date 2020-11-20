@@ -4,13 +4,16 @@ C-3PO,167,75,NA,gold,yellow,112,none
 R2-D2,96,32,NA,"white, blue",red,33,none
 Darth Vader,202,136,none,white,yellow,41.9,male
 Leia Organa,150,49,brown,light,brown,19,female
-Owen Lars,178,120,"brown, grey",light,blue,52,male
+Owen Lars,178,120,brown,light,blue,52,male
+Owen Lars,178,120,grey,light,blue,52,male
 Beru Whitesun lars,165,75,brown,light,blue,47,female
 R5-D4,97,32,NA,"white, red",red,NA,none
 Biggs Darklighter,183,84,black,light,brown,24,male
-Obi-Wan Kenobi,182,77,"auburn, white",fair,blue-gray,57,male
+Obi-Wan Kenobi,182,77,auburn,fair,blue-gray,57,male
+Obi-Wan Kenobi,182,77,white,fair,blue-gray,57,male
 Anakin Skywalker,188,84,blond,fair,blue,41.9,male
-Wilhuff Tarkin,180,NA,"auburn, grey",fair,blue,64,male
+Wilhuff Tarkin,180,NA,auburn,fair,blue,64,male
+Wilhuff Tarkin,180,NA,grey,fair,blue,64,male
 Chewbacca,228,112,brown,unknown,blue,200,male
 Han Solo,180,80,brown,fair,brown,29,male
 Greedo,173,74,NA,green,black,44,male

@@ -1,6 +1,6 @@
 ---
-title: "create some test data"
-output: html_notebook
+title: "Create some test data"
+# output: html_notebook
 ---
 
 ```{r message=FALSE, warning=FALSE}
@@ -16,6 +16,12 @@ dir_create("../_data_analysis")
 
 ```{r}
 write_csv(starwars %>% select(1:8), "../_data_original/starwars_subset.csv")
-write_csv(starwars %>% select(1:8), "../_data_analysis/starwars_subset.csv")
+write_csv(starwars %>% select(1:8) %>% separate_rows(hair_color), "../_data_analysis/starwars_subset.csv")
+```
+
+```{r}
+starwars %>% 
+  select(1:8) %>% 
+  separate_rows(hair_color)
 ```
 
