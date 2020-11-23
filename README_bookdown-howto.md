@@ -1,42 +1,23 @@
 # README  
-The goal of reproducibility\_stats\_honors is to …
-
-Enable a reproducible environment for your Statistics honors thesis written
-in [Bookdown](https://www.bookdown.org/)
+There are multiple methods to creating a bookdown.  This template enables a streamlined approach where the bookdown template has been overlayed into an RStudio Project which is also a Git repository.
 
 ## Bookdown  
 [Bookdown](https://bookdown.org/home/about/) is an open source R package that makes it easy to write books.  It works really well within the  RStudio project environment and is the preferred method within the Duke Stats department for producing and submitting honors theses. 
 
 ## Procedures  
-1. Update/install: R/RStudio.  Is [Git](https://git-scm.com/) installed?  
+1. Update/install: R/RStudio.  This workshop assumes you have [Git](https://git-scm.com/) installed.  
 
     - Windows: install [Rtools](https://cran.r-project.org/bin/windows/Rtools/)  
     
-1. Update/install tidyverse, bookdown, tinytex, remotes, and devtools packages.  Then install TinyTex distribution
+2. Update/install tidyverse, bookdown, tinytex.  Then install TinyTex distribution
 
 ```
-install.packages(c("tidyverse", "bookdown", "tinytex", "remotes", "devtools"))
+install.packages(c("tidyverse", "bookdown", "tinytex"))
 tinytex::install_tinytex()   
 ```
 
-3. Follow [step 2 of the _Getting Started_ section](https://bookdown.org/home/about/)
-1. Add Tier Protocol [organizational directories](https://www.projecttier.org/tier-protocol/specifications/#overview-of-the-documentation): `_data_original`, `_data_analysis`, `_scripts_development` 
-1. Create Bookdown Book (Book Tab > Build Book) 
-1. Push to GitHub
-
-```
-# https://usethis.r-lib.org/articles/articles/git-credentials.html
-# https://happygitwithr.com/
-remotes::install_github("r-lib/usethis")
-library(usethis)
-use_git()  #use_git_ignore()
-use_readme.md()
-use_ccby_license()
-use_github()
-
-```
-
-7. Develop your analysis; compose and orchestrate your HTML book (ignore PDF for now)
+3. Create a test Bookdown Book (Book Tab > Build Book).  Your test book shuold build without errors
+4. Develop your analysis; compose and orchestrate your HTML book (ignore PDF for now)
 
 ## Tips  
 1. In bookdown, each chapter is an Rmd file found in the project root.  (index.Rmd, 01, 02, ... 999999)
@@ -47,12 +28,13 @@ use_github()
 1. Cannot have identical identifiers for chapters and sections.  Can have custom identifiers {#foo-identifier}
 1. [**Merge and Knit** or _Knit and Merge_](https://bookdown.org/yihui/bookdown/new-session.html)
 1. .gitignore the _book directory until the end.  Consider, periodically unfreezing and `git push`
-1. At the end of your project, you may need to change the `git remote` so you can `git push` your RStudio project into the [Statistics Department GitHub pages](https://github.com/dukestatsci)
+
 
 ## license: “CC BY-NC”  
-[*Choose license(s)*](https://docs.google.com/presentation/d/1CcKWMUsH7ADCpLQZ57tfhiUIZYgKahmd_z45pVucVlw/edit#slide=id.g72011cc5c1_1_90)
+- [*Choose license(s)*](https://docs.google.com/presentation/d/1CcKWMUsH7ADCpLQZ57tfhiUIZYgKahmd_z45pVucVlw/edit#slide=id.g72011cc5c1_1_90)
+- A selective list of [uesthis enabled licenses](https://usethis.r-lib.org/reference/licenses.html) can be generated automatically
 
-Creative Commong: Attribution, Non-Commerical  
+Creative Commons: Attribution, Non-Commerical  
 <https://creativecommons.org/licenses/by-nc/4.0/>
 
 ## References  
