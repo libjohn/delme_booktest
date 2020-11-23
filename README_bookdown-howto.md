@@ -1,5 +1,5 @@
 # README  
-There are multiple methods to creating a bookdown.  This template enables a streamlined approach where the bookdown template has been overlayed into an RStudio Project which is also a Git repository.
+There are multiple methods for creating a bookdown.  This template enables a streamlined approach where the bookdown template has been overlayed into an RStudio Project which is also a Git repository.
 
 ## Bookdown  
 [Bookdown](https://bookdown.org/home/about/) is an open source R package that makes it easy to write books.  It works really well within the  RStudio project environment and is the preferred method within the Duke Stats department for producing and submitting honors theses. 
@@ -16,8 +16,9 @@ install.packages(c("tidyverse", "bookdown", "tinytex"))
 tinytex::install_tinytex()   
 ```
 
-3. Create a test Bookdown Book (Book Tab > Build Book).  Your test book shuold build without errors
-4. Develop your analysis; compose and orchestrate your HTML book (ignore PDF for now)
+3. Clone your customized GitHub repository (https://github.com/DukeStatSci)
+3. Create a test Bookdown Book:  `Book Tab > Build Book`.  Your test book should build without errors
+4. Develop your analysis; compose and orchestrate your HTML book.  Ignore PDF for now
 
 ## Tips  
 1. In bookdown, each chapter is an Rmd file found in the project root.  (index.Rmd, 01, 02, ... 999999)
