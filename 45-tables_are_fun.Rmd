@@ -2,7 +2,7 @@
 
 ```{r message=FALSE, warning=FALSE}
 library(tidyverse)
-# library(gt)
+# library(gt)  # https://gt.rstudio.com/
 ```
 
 

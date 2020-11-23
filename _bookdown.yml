@@ -1,4 +1,4 @@
-book_filename: "delme_booktest"
+# book_filename: "rename_me"  # use the same name as your RStudio Project Name.  See https://bookdown.org/yihui/bookdown/configuration.html
 delete_merged_file: true
 language:
   ui:
