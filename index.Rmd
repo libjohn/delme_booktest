@@ -3,7 +3,6 @@ title: "Nifty Neato Bookdown"
 subtitle: "Based on the book and work of Yihui Xie"
 author: "Your Name Here"
 date: "`r Sys.Date()`"
-abstract: "\n\nLearn more about bookdown: <br> - &nbsp; https://bookdown.org/yihui/bookdown/"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -34,3 +33,6 @@ knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
 ```
+
+
+Learn more about bookdown https://bookdown.org/yihui/bookdown
