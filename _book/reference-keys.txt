@@ -12,6 +12,5 @@ tables-are-fun
 paged-tables-are-interactive-but-only-work-in-.nb.html
 non-interactive
 great-tables
-final-words
-tab:unnamed-chunk-3
 math-expressions
+final-words

@@ -24,7 +24,7 @@
 <meta name="author" content="Your Name Here" />
 
 
-<meta name="date" content="2020-11-20" />
+<meta name="date" content="2020-11-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,16 +33,6 @@
   
 <link rel="prev" href="applications.html"/>
 <link rel="next" href="final-words.html"/>
-<style type="text/css">
-p.abstract{
-  text-align: center;
-  font-weight: bold;
-}
-div.abstract{
-  margin: auto;
-  width: 90%;
-}
-</style>
 <script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -186,13 +176,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="tables-are-fun" class="section level1" number="6">
 <h1><span class="header-section-number">Chapter 6</span> Tables are fun</h1>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="tables-are-fun.html#cb3-1"></a><span class="kw">library</span>(tidyverse)</span>
-<span id="cb3-2"><a href="tables-are-fun.html#cb3-2"></a><span class="co"># library(gt)</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="tables-are-fun.html#cb4-1"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb4-2"><a href="tables-are-fun.html#cb4-2"></a><span class="co"># library(gt)  # https://gt.rstudio.com/</span></span></code></pre></div>
 <p>Tables can be a challenge to render</p>
 <p><a href="https://bookdown.org/yihui/bookdown/tables.html" class="uri">https://bookdown.org/yihui/bookdown/tables.html</a></p>
 <div id="paged-tables-are-interactive-but-only-work-in-.nb.html" class="section level2" number="6.1">
 <h2><span class="header-section-number">6.1</span> Paged tables are interactive but only work in .nb.html</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="tables-are-fun.html#cb4-1"></a>starwars</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="tables-are-fun.html#cb5-1"></a>starwars</span></code></pre></div>
 <pre><code>## # A tibble: 87 x 14
 ##    name  height  mass hair_color skin_color eye_color birth_year sex   gender
 ##    &lt;chr&gt;  &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; 
@@ -212,12 +202,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="non-interactive" class="section level2" number="6.2">
 <h2><span class="header-section-number">6.2</span> non-interactive</h2>
 <p>Old school, BUT easily cross functional with PDF and HTML alike</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="tables-are-fun.html#cb6-1"></a>knitr<span class="op">::</span><span class="kw">kable</span>(</span>
-<span id="cb6-2"><a href="tables-are-fun.html#cb6-2"></a>  <span class="kw">head</span>(starwars <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">6</span>), <span class="dv">8</span>), <span class="dt">caption =</span> <span class="st">&#39;Another nice table!&#39;</span>,</span>
-<span id="cb6-3"><a href="tables-are-fun.html#cb6-3"></a>  <span class="dt">booktabs =</span> <span class="ot">TRUE</span></span>
-<span id="cb6-4"><a href="tables-are-fun.html#cb6-4"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="tables-are-fun.html#cb7-1"></a>knitr<span class="op">::</span><span class="kw">kable</span>(</span>
+<span id="cb7-2"><a href="tables-are-fun.html#cb7-2"></a>  <span class="kw">head</span>(starwars <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">6</span>), <span class="dv">8</span>), <span class="dt">caption =</span> <span class="st">&#39;Another nice table!&#39;</span>,</span>
+<span id="cb7-3"><a href="tables-are-fun.html#cb7-3"></a>  <span class="dt">booktabs =</span> <span class="ot">TRUE</span></span>
+<span id="cb7-4"><a href="tables-are-fun.html#cb7-4"></a>)</span></code></pre></div>
 <table>
-<caption><span id="tab:unnamed-chunk-3">Table 6.1: </span>Another nice table!</caption>
+<caption><span id="tab:unnamed-chunk-5">Table 6.1: </span>Another nice table!</caption>
 <thead>
 <tr class="header">
 <th align="left">name</th>
@@ -300,18 +290,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">6.3</span> Great Tables</h2>
 <p>the <a href="https://gt.rstudio.com/"><code>gt</code> package</a> is awesome but doesn’t work in PDF. Additionally, the <code>knitr::kable()</code> function has some organizatonal and referencing features that you may prefer to have handled automatically.</p>
 <p>Until <code>gt</code> moves beyond the development you may want to avoid this approach.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="tables-are-fun.html#cb7-1"></a>starwars <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb7-2"><a href="tables-are-fun.html#cb7-2"></a><span class="st">  </span><span class="kw">select</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">4</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb7-3"><a href="tables-are-fun.html#cb7-3"></a><span class="st">  </span><span class="kw">slice_head</span>(<span class="dt">n =</span> <span class="dv">8</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb7-4"><a href="tables-are-fun.html#cb7-4"></a><span class="st">  </span><span class="kw">gt</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb7-5"><a href="tables-are-fun.html#cb7-5"></a><span class="st">  </span><span class="kw">tab_header</span>(</span>
-<span id="cb7-6"><a href="tables-are-fun.html#cb7-6"></a>    <span class="dt">title =</span> <span class="kw">md</span>(<span class="st">&quot;**_Star Wars_ characters**&quot;</span>),</span>
-<span id="cb7-7"><a href="tables-are-fun.html#cb7-7"></a>    <span class="dt">subtitle =</span> <span class="st">&quot;subtitles are cool&quot;</span></span>
-<span id="cb7-8"><a href="tables-are-fun.html#cb7-8"></a>    ) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb7-9"><a href="tables-are-fun.html#cb7-9"></a><span class="st">  </span><span class="kw">tab_source_note</span>(</span>
-<span id="cb7-10"><a href="tables-are-fun.html#cb7-10"></a>    <span class="dt">source_note =</span> <span class="kw">md</span>(<span class="st">&quot;Source:  `dplyr::starwars`&quot;</span>)</span>
-<span id="cb7-11"><a href="tables-are-fun.html#cb7-11"></a>    ) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb7-12"><a href="tables-are-fun.html#cb7-12"></a><span class="st">  </span><span class="kw">tab_options</span>(<span class="dt">heading.background.color =</span> <span class="st">&quot;darkseagreen&quot;</span>) </span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="tables-are-fun.html#cb8-1"></a>starwars <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-2"><a href="tables-are-fun.html#cb8-2"></a><span class="st">  </span><span class="kw">select</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">4</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-3"><a href="tables-are-fun.html#cb8-3"></a><span class="st">  </span><span class="kw">slice_head</span>(<span class="dt">n =</span> <span class="dv">8</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-4"><a href="tables-are-fun.html#cb8-4"></a><span class="st">  </span><span class="kw">gt</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-5"><a href="tables-are-fun.html#cb8-5"></a><span class="st">  </span><span class="kw">tab_header</span>(</span>
+<span id="cb8-6"><a href="tables-are-fun.html#cb8-6"></a>    <span class="dt">title =</span> <span class="kw">md</span>(<span class="st">&quot;**_Star Wars_ characters**&quot;</span>),</span>
+<span id="cb8-7"><a href="tables-are-fun.html#cb8-7"></a>    <span class="dt">subtitle =</span> <span class="st">&quot;subtitles are cool&quot;</span></span>
+<span id="cb8-8"><a href="tables-are-fun.html#cb8-8"></a>    ) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-9"><a href="tables-are-fun.html#cb8-9"></a><span class="st">  </span><span class="kw">tab_source_note</span>(</span>
+<span id="cb8-10"><a href="tables-are-fun.html#cb8-10"></a>    <span class="dt">source_note =</span> <span class="kw">md</span>(<span class="st">&quot;Source:  `dplyr::starwars`&quot;</span>)</span>
+<span id="cb8-11"><a href="tables-are-fun.html#cb8-11"></a>    ) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-12"><a href="tables-are-fun.html#cb8-12"></a><span class="st">  </span><span class="kw">tab_options</span>(<span class="dt">heading.background.color =</span> <span class="st">&quot;darkseagreen&quot;</span>) </span></code></pre></div>
 <p>None of this was based on a book by John Little <span class="citation">(Little <a href="#ref-Little2018" role="doc-biblioref">2018</a>)</span>.</p>
 </div>
 <div id="math-expressions" class="section level2" number="6.4">
@@ -319,8 +309,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>You can make Inline LaTeX equations</p>
 <p><span class="math display">\[f(k) = {n \choose k} p^{k} (1-p)^{n-k}\]</span></p>
 <p>The above is done with <code>$$f(k) = {n \choose k} p^{k} (1-p)^{n-k}$$</code></p>
-<p><a href="https://bookdown.org/yihui/rmarkdown/rticles-latex.html">Recommendation to R Markdown syntax unless</a> there are specific requirements for using LaTeX
-Read more about <a href="https://bookdown.org/yihui/bookdown/markdown-syntax.html#math-expressions">Markdown syntax for Math expressions</a></p>
+<p><a href="https://bookdown.org/yihui/rmarkdown/rticles-latex.html">Recommendation to R Markdown syntax unless</a> there are specific requirements for using LaTeX.</p>
+<p>Read more about <a href="https://bookdown.org/yihui/bookdown/markdown-syntax.html#math-expressions">Markdown syntax for Math expressions</a></p>
 
 </div>
 </div>
@@ -378,7 +368,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["delme_booktest.pdf", "delme_booktest.epub"],
+"download": ["_main.pdf", "_main.epub"],
 "toc": {
 "collapse": "subsection"
 }

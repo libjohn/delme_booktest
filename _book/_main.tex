@@ -37,7 +37,7 @@
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
   pdftitle={Nifty Neato Bookdown},
-  pdfauthor={John Little},
+  pdfauthor={Your Name Here},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
@@ -119,8 +119,8 @@
 }
 \makeatother
 \subtitle{Based on the book and work of Yihui Xie}
-\author{John Little}
-\date{2020-11-20}
+\author{Your Name Here}
+\date{2020-11-23}
 
 \begin{document}
 \maketitle
@@ -148,6 +148,8 @@ Remember each Rmd file contains one and only one chapter, and a chapter is defin
 
 To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
 
+Learn more about bookdown \url{https://bookdown.org/yihui/bookdown}
+
 \hypertarget{intro}{%
 \chapter{Introduction}\label{intro}}
 
@@ -164,7 +166,7 @@ Figures and tables with captions will be placed in \texttt{figure} and \texttt{t
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{delme_booktest_files/figure-latex/nice-fig-1} 
+{\centering \includegraphics[width=0.8\linewidth]{_main_files/figure-latex/nice-fig-1} 
 
 }
 
@@ -246,7 +248,7 @@ Some \emph{significant} applications are demonstrated in this chapter.
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{library}\NormalTok{(tidyverse)}
-\CommentTok{\# library(gt)}
+\CommentTok{\# library(gt)  \# https://gt.rstudio.com/}
 \end{Highlighting}
 \end{Shaded}
 
@@ -340,13 +342,26 @@ Until \texttt{gt} moves beyond the development you may want to avoid this approa
 \end{Highlighting}
 \end{Shaded}
 
-None of this was based on a book by John Little \citep{Little2018}, or Maria Tackett {[}tackett2020{]}, or Sophia Lafferty-Hess{[}sophia2020{]}.
+None of this was based on a book by John Little \citep{Little2018}.
+
+\hypertarget{math-expressions}{%
+\section{Math Expressions}\label{math-expressions}}
+
+You can make Inline LaTeX equations
+
+\[f(k) = {n \choose k} p^{k} (1-p)^{n-k}\]
+
+The above is done with \texttt{\$\$f(k)\ =\ \{n\ \textbackslash{}choose\ k\}\ p\^{}\{k\}\ (1-p)\^{}\{n-k\}\$\$}
+
+\href{https://bookdown.org/yihui/rmarkdown/rticles-latex.html}{Recommendation to R Markdown syntax unless} there are specific requirements for using LaTeX.
+
+Read more about \href{https://bookdown.org/yihui/bookdown/markdown-syntax.html\#math-expressions}{Markdown syntax for Math expressions}
 
 \hypertarget{final-words}{%
 \chapter{Final Words}\label{final-words}}
 
 We have finished a nice book.
 
-  \bibliography{book.bib,packages.bib,myown.bib}
+  \bibliography{book.bib,packages.bib}
 
 \end{document}

@@ -1,4 +1,4 @@
-# book_filename: "rename_me"  # use the same name as your RStudio Project Name.  See https://bookdown.org/yihui/bookdown/configuration.html
+# book_filename: "rename_me"  # Uncomment this line to rename your PDF book from _main.pdf to rename_me.pdf.  See https://bookdown.org/yihui/bookdown/configuration.html
 delete_merged_file: true
 language:
   ui:
