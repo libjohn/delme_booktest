@@ -18,17 +18,17 @@ tinytex::install_tinytex()
 
 3. Clone your customized GitHub repository (https://github.com/DukeStatSci)
 3. Create a test Bookdown Book:  `Book` tab > `Build Book` button.  Your test book should build without errors
-4. Develop your analysis; compose and orchestrate your HTML book.  Ignore PDF for now
+3. Develop your analysis; compose and orchestrate your HTML book.  Ignore PDF for now
 
 ## Tips  
-1. In bookdown, each chapter is an Rmd file found in the project root.  (index.Rmd, 01, 02, ... 999999)
+1. In bookdown, each chapter is an Rmd file found in the project root.  (index.Rmd [required], 01, 02, ... 999999)
 1. Files and directory names that begin with underscore _ will not be processed by `bookdown::render_book()`
 1. Cannot have identical code-chunk names
 1. Code chunks that produce visualizations should have a code chunk _name_
-1. Synchronize the file_name for each chapter with H1 in in line 1
+1. Synchronize the file_name for each chapter with HEADER 1: #, line 1
 1. Cannot have identical identifiers for chapters and sections.  Can have custom identifiers {#foo-identifier}
 1. [**Merge and Knit** or _Knit and Merge_](https://bookdown.org/yihui/bookdown/new-session.html)
-1. .gitignore the _book directory until the end.  Consider, periodically unfreezing and `git push`
+1. Your compiled book is in the _book directory.  You may put _book and other directoris into .gitignore 
 
 
 ## license: “CC BY-NC”  
