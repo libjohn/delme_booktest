@@ -17,7 +17,7 @@ tinytex::install_tinytex()
 ```
 
 3. Clone your customized GitHub repository (https://github.com/DukeStatSci)
-3. Create a test Bookdown Book:  `Book Tab > Build Book`.  Your test book should build without errors
+3. Create a test Bookdown Book:  `Book` tab > `Build Book` button.  Your test book should build without errors
 4. Develop your analysis; compose and orchestrate your HTML book.  Ignore PDF for now
 
 ## Tips  
