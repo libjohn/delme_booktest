@@ -1,6 +1,6 @@
 fig:nice-fig
 tab:nice-tab
-tab:unnamed-chunk-5
+tab:unnamed-chunk-7
 prerequisites
 intro
 literature
@@ -8,6 +8,7 @@ methods
 applications
 example-one
 example-two
+viz
 tables-are-fun
 paged-tables-are-interactive-but-only-work-in-.nb.html
 non-interactive

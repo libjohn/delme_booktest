@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 6 Tables are fun | Nifty Neato Bookdown</title>
+  <title>Chapter 7 Tables are fun | Nifty Neato Bookdown</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 6 Tables are fun | Nifty Neato Bookdown" />
+  <meta property="og:title" content="Chapter 7 Tables are fun | Nifty Neato Bookdown" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 Tables are fun | Nifty Neato Bookdown" />
+  <meta name="twitter:title" content="Chapter 7 Tables are fun | Nifty Neato Bookdown" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -24,14 +24,14 @@
 <meta name="author" content="Your Name Here" />
 
 
-<meta name="date" content="2020-11-23" />
+<meta name="date" content="2020-12-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="applications.html"/>
+<link rel="prev" href="viz.html"/>
 <link rel="next" href="final-words.html"/>
 <script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
@@ -145,14 +145,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
 <li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="tables-are-fun.html"><a href="tables-are-fun.html"><i class="fa fa-check"></i><b>6</b> Tables are fun</a>
+<li class="chapter" data-level="6" data-path="viz.html"><a href="viz.html"><i class="fa fa-check"></i><b>6</b> viz</a></li>
+<li class="chapter" data-level="7" data-path="tables-are-fun.html"><a href="tables-are-fun.html"><i class="fa fa-check"></i><b>7</b> Tables are fun</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="tables-are-fun.html"><a href="tables-are-fun.html#paged-tables-are-interactive-but-only-work-in-.nb.html"><i class="fa fa-check"></i><b>6.1</b> Paged tables are interactive but only work in .nb.html</a></li>
-<li class="chapter" data-level="6.2" data-path="tables-are-fun.html"><a href="tables-are-fun.html#non-interactive"><i class="fa fa-check"></i><b>6.2</b> non-interactive</a></li>
-<li class="chapter" data-level="6.3" data-path="tables-are-fun.html"><a href="tables-are-fun.html#great-tables"><i class="fa fa-check"></i><b>6.3</b> Great Tables</a></li>
-<li class="chapter" data-level="6.4" data-path="tables-are-fun.html"><a href="tables-are-fun.html#math-expressions"><i class="fa fa-check"></i><b>6.4</b> Math Expressions</a></li>
+<li class="chapter" data-level="7.1" data-path="tables-are-fun.html"><a href="tables-are-fun.html#paged-tables-are-interactive-but-only-work-in-.nb.html"><i class="fa fa-check"></i><b>7.1</b> Paged tables are interactive but only work in .nb.html</a></li>
+<li class="chapter" data-level="7.2" data-path="tables-are-fun.html"><a href="tables-are-fun.html#non-interactive"><i class="fa fa-check"></i><b>7.2</b> non-interactive</a></li>
+<li class="chapter" data-level="7.3" data-path="tables-are-fun.html"><a href="tables-are-fun.html#great-tables"><i class="fa fa-check"></i><b>7.3</b> Great Tables</a></li>
+<li class="chapter" data-level="7.4" data-path="tables-are-fun.html"><a href="tables-are-fun.html#math-expressions"><i class="fa fa-check"></i><b>7.4</b> Math Expressions</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>7</b> Final Words</a></li>
+<li class="chapter" data-level="8" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>8</b> Final Words</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://stat.duke.edu/" target="blank">Duke University<br>Department of Statistical Science</a></li>
@@ -174,14 +175,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="tables-are-fun" class="section level1" number="6">
-<h1><span class="header-section-number">Chapter 6</span> Tables are fun</h1>
+<div id="tables-are-fun" class="section level1" number="7">
+<h1><span class="header-section-number">Chapter 7</span> Tables are fun</h1>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="tables-are-fun.html#cb4-1"></a><span class="kw">library</span>(tidyverse)</span>
 <span id="cb4-2"><a href="tables-are-fun.html#cb4-2"></a><span class="co"># library(gt)  # https://gt.rstudio.com/</span></span></code></pre></div>
 <p>Tables can be a challenge to render</p>
 <p><a href="https://bookdown.org/yihui/bookdown/tables.html" class="uri">https://bookdown.org/yihui/bookdown/tables.html</a></p>
-<div id="paged-tables-are-interactive-but-only-work-in-.nb.html" class="section level2" number="6.1">
-<h2><span class="header-section-number">6.1</span> Paged tables are interactive but only work in .nb.html</h2>
+<div id="paged-tables-are-interactive-but-only-work-in-.nb.html" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> Paged tables are interactive but only work in .nb.html</h2>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="tables-are-fun.html#cb5-1"></a>starwars</span></code></pre></div>
 <pre><code>## # A tibble: 87 x 14
 ##    name  height  mass hair_color skin_color eye_color birth_year sex   gender
@@ -199,15 +200,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## # ... with 77 more rows, and 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;,
 ## #   films &lt;list&gt;, vehicles &lt;list&gt;, starships &lt;list&gt;</code></pre>
 </div>
-<div id="non-interactive" class="section level2" number="6.2">
-<h2><span class="header-section-number">6.2</span> non-interactive</h2>
+<div id="non-interactive" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> non-interactive</h2>
 <p>Old school, BUT easily cross functional with PDF and HTML alike</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="tables-are-fun.html#cb7-1"></a>knitr<span class="op">::</span><span class="kw">kable</span>(</span>
 <span id="cb7-2"><a href="tables-are-fun.html#cb7-2"></a>  <span class="kw">head</span>(starwars <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">6</span>), <span class="dv">8</span>), <span class="dt">caption =</span> <span class="st">&#39;Another nice table!&#39;</span>,</span>
 <span id="cb7-3"><a href="tables-are-fun.html#cb7-3"></a>  <span class="dt">booktabs =</span> <span class="ot">TRUE</span></span>
 <span id="cb7-4"><a href="tables-are-fun.html#cb7-4"></a>)</span></code></pre></div>
 <table>
-<caption><span id="tab:unnamed-chunk-5">Table 6.1: </span>Another nice table!</caption>
+<caption><span id="tab:unnamed-chunk-7">Table 7.1: </span>Another nice table!</caption>
 <thead>
 <tr class="header">
 <th align="left">name</th>
@@ -286,8 +287,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tbody>
 </table>
 </div>
-<div id="great-tables" class="section level2" number="6.3">
-<h2><span class="header-section-number">6.3</span> Great Tables</h2>
+<div id="great-tables" class="section level2" number="7.3">
+<h2><span class="header-section-number">7.3</span> Great Tables</h2>
 <p>the <a href="https://gt.rstudio.com/"><code>gt</code> package</a> is awesome but doesn’t work in PDF. Additionally, the <code>knitr::kable()</code> function has some organizatonal and referencing features that you may prefer to have handled automatically.</p>
 <p>Until <code>gt</code> moves beyond the development you may want to avoid this approach.</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="tables-are-fun.html#cb8-1"></a>starwars <span class="op">%&gt;%</span><span class="st"> </span></span>
@@ -304,8 +305,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb8-12"><a href="tables-are-fun.html#cb8-12"></a><span class="st">  </span><span class="kw">tab_options</span>(<span class="dt">heading.background.color =</span> <span class="st">&quot;darkseagreen&quot;</span>) </span></code></pre></div>
 <p>None of this was based on a book by John Little <span class="citation">(Little <a href="#ref-Little2018" role="doc-biblioref">2018</a>)</span>.</p>
 </div>
-<div id="math-expressions" class="section level2" number="6.4">
-<h2><span class="header-section-number">6.4</span> Math Expressions</h2>
+<div id="math-expressions" class="section level2" number="7.4">
+<h2><span class="header-section-number">7.4</span> Math Expressions</h2>
 <p>You can make Inline LaTeX equations</p>
 <p><span class="math display">\[f(k) = {n \choose k} p^{k} (1-p)^{n-k}\]</span></p>
 <p>The above is done with <code>$$f(k) = {n \choose k} p^{k} (1-p)^{n-k}$$</code></p>
@@ -325,7 +326,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="applications.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="viz.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="final-words.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>

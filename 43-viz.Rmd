@@ -1,0 +1,14 @@
+# viz
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+```
+
+```{r echo=FALSE}
+starwars %>% 
+  separate_rows(hair_color) %>% 
+  mutate(hair_color = if_else(str_detect(hair_color, "londe"), "blond", hair_color)) %>% 
+  mutate(hair_color = fct_lump_min(fct_infreq(str_to_title(hair_color)), 4)) %>% 
+  ggplot() +
+  geom_bar(aes(hair_color))
+```
